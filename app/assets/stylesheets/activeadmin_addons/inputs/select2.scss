@@ -4,8 +4,24 @@
 .selection__clear, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove, .select2-selection__clear,
 .selection__clear:hover, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover, .select2-selection__clear:hover {
   background-image: none;
-  background-color: none;
+  background-color: transparent;
   text-shadow: none;
   box-shadow: none;
-  border: none!important;
+  border: none;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__clear {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  color: #000;
+
+  &:hover, &:active {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    font-size: 1em;
+    color: #000;
+  }
+
 }
